@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Quota Hub">
+  <defs>
+    <linearGradient id="qh-bg" x1="8" y1="6" x2="56" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5B8CFF"/>
+      <stop offset="1" stop-color="#2E4FE0"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#qh-bg)"/>
+  <path d="M18 46h28" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  <path d="M22 46V30" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" opacity="0.55"/>
+  <path d="M32 46V22" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
+  <path d="M42 46V34" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+</svg>

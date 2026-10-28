@@ -1,0 +1,50 @@
+{
+  "name": "dsh-quota-hub",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Quota Hub for DeepSeek Harness: live AI quota dashboard (5h windows, weekly quotas, balances) in the sidebar, with an animated semicircle rainbow. 配套 macOS 菜单栏小彩虹 QuotaBar。",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wldeinsamkeit/dsh-quota-hub.git"
+  },
+  "author": {
+    "name": "Wldeinsamkeit"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "quota",
+    "dashboard",
+    "dsh-plugin"
+  ],
+  "engines": {
+    "dsh": ">=0.1.7"
+  }
+}
